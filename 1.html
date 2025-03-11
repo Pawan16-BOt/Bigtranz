@@ -1,0 +1,1200 @@
+<html>
+ <head>
+  <title>
+   Bigtranz
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header .logo {
+            display: flex;
+            align-items: center;
+        }
+        .header .logo img {
+            height: 20px;
+            margin-right: 10px;
+        }
+        .header .buy-now {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .navbar {
+            background-color: #6a0dad;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .navbar .contact-info {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        .navbar .contact-info div {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .hero {
+            position: relative;
+            text-align: left;
+            color: white;
+        }
+        .hero img {
+            width: 100%;
+            height: auto;
+        }
+        .hero .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+        }
+        .hero .hero-text h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        @media (max-width: 768px) {
+            .navbar .nav-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .navbar .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .hero .hero-text h1 {
+                font-size: 2em;
+            }
+        }
+  </style>
+ </head>
+ <body>
+  <div class="header">
+   <div class="logo">
+    <img alt="Envato Market Logo" height="20" src="https://storage.googleapis.com/a1aa/image/K_yKoRXMaY-18P0VjPhfnzmCYI00LBkA3DrMvkVrhYA.jpg" width="20"/>
+    <span>
+     envato market
+    </span>
+   </div>
+   <button class="buy-now">
+    Buy now
+   </button>
+  </div>
+  <div class="navbar">
+   <div class="logo">
+    <img alt="Bigtranz Logo" height="50" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsJCQcJCQcJCQkJCwkJCQkJCQsJCwsMCwsLDA0QDBEODQ4MEhkSJRodJR0ZHxwpKRYlNzU2GioyPi0pMBk7IRP/2wBDAQcICAsJCxULCxUsHRkdLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCz/wAARCABuAY8DASIAAhEBAxEB/8QAGwABAAIDAQEAAAAAAAAAAAAAAAUGAQIEAwf/xAA4EAACAQMBBQYDBgUFAAAAAAAAAQIDBBEhBRIxQVETFCJhgdEjQnEVMlRikZIzUqGxwTREcoKT/8QAGwEBAAIDAQEAAAAAAAAAAAAAAAUGAgQHAwH/xAA1EQABAwIDBQYFAwUBAAAAAAAAAQIDBBEFITESE0FRYQYygZHB8BQiUnHRM7HxIyQ0QqHh/9oADAMBAAIRAxEAPwD64AADBHbWtJ3FFTp5c6O9JR/mT4okTJq1VO2pidE/RT0ikWJ6PbqhScsZZ37UtO7Vu0gvhVm2scIz4texHnIqqlfSzOifqnu5c4ZWzMR7dFM5YyzANTM9jOWMtapmAD4dtDat7QxHMJwWm7KKX6OOGTdptG3usQ/h1cfclz+jKvrzMpuLUotqSeU1o01zRP0GN1NIqIq7TeS+i8CPqMPilTJLLzQupk4Nm3buqGZtdpTe5Pz6P1O86XTztqI2ys0Uq0kbo3qx2qAAGwYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGNdDwu1cOhV7u92slmDwnnGuNep7OUUtZJdMtL+5hTptpb0cvglJHjLZzVYq2v1spk26Ki20Kx9p7TWU7h5Wj8MPYytqbRjKLdbeSabjuww10eh7bXs+yqd4gvh1X41yjPr6kXwOX1k9bRzrE+R106rnyUtkDIJ40e1qZ9ELbCVte0ITcYzpySe7JJ4fRryHcdn/h6P7EQmybvsKvY1H8Os9M8Iz4L9Sx+ZesOqIcRgSR7UVyZLkmv4Ur1TG+mkViKtuBzfZ+z/wANR/ah9n7O/DUf2o6wSXwdP9CeSGvvpPqXzOJ7O2dJf6amvpHD/VERtLZ0bZRq0m+yct2UXq4t8NehYv8AJHbXnCNnKMmt6pOEYrno95siMVw+ldSverURUS6KiWz/APTbo6iVJmtuqopWwAcuLcSuw5NXFePKVJP1TLCQWwqT3ris+GFSj5/MydOpdn2ubQt2uN/K5UcRVFqHW6GQAWAjwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACN2raOvR7SGe0o5kkvmXNFbTlFqUW1JNNNcU0XTMeGV+qK1tSz7tW7SC+DVbaxwjPi4+xSO0dCv8AmRfZfRfQncMqE/Rf4fglratS2lZyhUxvbvZ1V0lykv7ortxQqW1apRnxg9HylF8Gj2sbqVrXjPXs5eGovy9fQmNqWkbqhG4pYdSnHeTXz03rj/KNSS2L0W8T9WPXqnv/AKerf7Ko2V7jtOild46Fk2dfU61HdqzjGpTwpb0ksrlLUrY1ITDcSkoJFc1LouqG/VUraltlyLFe7U7tOEaUKdVShvOW/wAHlrHhOT7drr/b0/3y9jalsajVpQqRuW1OKkmorGWiJq0p0qk6U1icJOL90TVfiGJwqky/K12lrKnmaFNT0kibCZqmuqEm9u3DWlCkn1cpP+hHV7ivcz7StNyfBJaKK6JHloNCBqcSqqpNmV6qnIkoqWKJdpjbD6HRa2dxdzUaUWoJ+Oo14Yry8znJiz2vGmoUq9NKCSip01jH1iZYdFTSzIlS/Zb+/jwMap8rWXiS6+/MmbehTt6UKVNYjFYXV+bPU1hOE4xnBpxkk01qmmbdTrUbWNYiM04FPcqqqq7UyAD1MQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACp3dvWsq8Upyx4ZUp6rLXH9CapSpbUsnGeFPG7PrCa4SR7X1rG6oOGnaR8VN9JdPUrlvdXFjVqOCW9rCpCaeMp88dCizNTCapWvzhemnvkTzFWthRW5SNPKpSqUZ1Kc1iUJOL9zotO+XMo20LiVOO5LClKW60vlSRm6d9dvvU7dxh2a8UItRcVzedTlhOdOUKkHicJKUX5orS7NPUXS+xfqiqhKZyx522vOynReWNaydPfanCecSinhNcnk5eBaE6W07PXCclh9YTRWqlOdKpOlNYlCTjJfTmbmLUDKZWzQZxvTL8HjRVLpbsk7yakpse83JO2qPwzbdNvlLnH1O+82dSu5wqb7pzSw3FJ7y5J5K0m4yTTw0001xTWuS07Pu1dUFJ47SHhqL83X1JrA6mKshWhqUvbNL8uXgaFfE+B/xEWV9TgewVyuHnzgn/k4brZt1apy0qU1xlDOY/wDJMtJhqMk4tZTTTT6ErP2do5GKkbdleaKvqakeJTtddy3QpQN6sVGpWjHhGpOK+ik0aHNHt2HK1S1NdtJcldkXUqdVW038Opl08/LJa4X1LCUunN06lOotHCcZr0eS6LgjofZmqdLA6Jy91cvsv8KVnFIUjkRycTIALYRIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABjoQW2LPdauoLSTUaqXJ8FL3J3HA0nThUhOnNZjJOLT5p6EdiFE2tgWJ2vBeSmxTzrBIj08SJ2RdKcO6VPvRT7PPOPNehHbQtHaV5JL4U8ypPy5x9DSvSrWF1iLacJKdKX80eXsycqRpbUsk44U8Zj1hUXFMp7I1rqZ1HKn9WPTqnL30JpXpTypMzuP1/JEbNu3a1kpP4VVqM+kXyl7khti07SCuqa8UF8RL5odfQgpRlGUoSTUotxknxTWmCwbKuu8Unb1dZ0441+aD0/pwPLCpm1EbsOqOPd6Ly9TOrYsT0qo+GvVCvHTY3crWvGfySxCqvy9fQ2v7R2taUUvhzzOk/LnH0OQgVSagqOTmr78FJH5KmLmil0hKMoxlF5UllNcGnrkj7/AGnStlVpU3vXGN3CWIwbWjk2eGxrzeXdKj1inKk3zjzj6GdsWe+u9QXigsVEucf5vQ6DPXy1GHrUUmvHmnO3VCtx07I6ndTacPQgdefF8QAcwXPUtZtCLqVKVNcak4Q/cy5paL6JEBsezlOoruomoQyqKfzN6ORYDo3ZqkfDC6V6W2tPsn8lYxWZHyIxP9f3MgAthEgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHPcWlrc7nbQUnDO63lNZ80Zt7a3t4yjRgoxb3mlnV9dT2B4JTxI/eo1NrnbPzM94/Z2b5ciJv9lzuayrUZQhKSxUUk8Nrg1g8bfZN7Qr0qsa1Jbkk5aS1jzRODJGvwalfNv7Wde+S2zNlK2VGbu+WhyX1oruhKnpvx8VN9JL3KpKMoylCSalFuMk+Ka0wXZkFtiz3X3umtHiNVLk+Cl7kT2iw3es+JjTNuvVOfgbuGVWw7dO0XT7kRCcqc4Tg8ThJSi11Ra7W4p3dvGeF4k4zi9cS4NMqXE7tm3ndayU38Ko1Gf5ZcpFfwPEfhJt3IvyOyXovBSRxCm3rNtveQ2u9l3UK8oW9Jzpze9B6JRT+Vt9DrtdjY3Z3ct7GqpR+7/2ZNgt0WAUjJVlVL53RF0TwIV2IzqxGXt14hRUUkkkksJLRJGQCwIltCPAAPoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABrKMZRcZJSi1hqSymvNM2BiqIuSg5e42H4Wh/5w9jKsbBNNW1BNcPhw9joB4/Cw/QnkhnvX/UpkAGwYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH/9k=" width="100" />
+   </div>
+   <div class="nav-links">
+    <a href="#">
+     HOME
+    </a>
+    <a href="#">
+     ABOUT US
+    </a>
+    <a href="#">
+     SERVICES
+    </a>
+    <a href="#">
+     OUR BUS
+    </a>
+    <a href="#">
+     PAGES
+    </a>
+   </div>
+   <div class="contact-info">
+    <div>
+     <i class="fas fa-briefcase">
+     </i>
+     <span>
+      Working Hours:
+     </span>
+     <span>
+      Mon-Sun: 9am-5pm
+     </span>
+    </div>
+    <div>
+     <i class="fas fa-phone">
+     </i>
+     <span>
+      Call Center
+     </span>
+     <span>
+      +91 000-000-0000
+     </span>
+    </div>
+   </div>
+  </div>
+  <div class="hero">
+   <img alt="Cityscape with a bus in the foreground" height="500" src="https://storage.googleapis.com/a1aa/image/IVUv1Apl2Ut88Cq1XNPITnuHyj2id6phUZh1AJC248c.jpg" width="1200"/>
+   <div class="hero-text">
+    <h1>
+     Charter With Us For An Adventure-Filled Journey
+    </h1>
+   </div>
+  </div>
+  <script src="https://cdn.tailwindcss.com">
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body class="bg-gray-100">
+<div class="bg-blue-900 text-white py-10">
+ <div class="container mx-auto text-center">
+  <h1 class="text-4xl font-bold mb-4">
+   Luctus nisi pharetra mollis aliquet iaculis tempus potenti.
+  </h1>
+  <p class="text-lg mb-6">
+   Dictumst vestibulum luctus eget sit sagittis et.
+  </p>
+  <button class="bg-yellow-500 text-black px-6 py-3 rounded-full font-semibold text-lg">
+   <i class="fas fa-arrow-right">
+   </i>
+   Get Started
+  </button>
+ </div>
+</div>
+<div class="relative">
+ <img alt="Bus on the road" class="w-full" height="400" src="https://storage.googleapis.com/a1aa/image/JJdHZOmkkvtRp1jOItnEpzQc3O7YPCMscjxzkHPdSQc.jpg" width="1200"/>
+ <div class="absolute inset-0 bg-gradient-to-t from-blue-900 to-transparent">
+ </div>
+</div>
+<div class="container mx-auto py-10 px-4 md:px-0">
+ <div class="grid md:grid-cols-2 gap-8">
+  <div class="bg-gradient-to-r from-purple-700 to-purple-500 text-white p-8 rounded-lg">
+   <h2 class="text-3xl font-bold mb-4">
+    Call Now !
+   </h2>
+   <div class="flex items-center mb-4">
+    <div class="bg-yellow-500 text-black p-4 rounded-full">
+     <i class="fas fa-phone-alt text-2xl">
+     </i>
+    </div>
+    <div class="ml-4">
+     <p class="text-lg">
+      Call for detail information
+     </p>
+     <p class="text-2xl font-bold">
+      +91 000-0000-000
+     </p>
+    </div>
+   </div>
+  </div>
+  <div class="bg-white p-8 rounded-lg shadow-lg">
+   <h2 class="text-2xl font-bold mb-6">
+    Online Booking
+   </h2>
+   <form>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+     <div>
+      <label class="block text-gray-700 mb-2" for="from">
+       From
+      </label>
+      <select class="w-full p-3 border border-gray-300 rounded" id="from">
+       <option>
+        Location 1
+       </option>
+       <option>
+        Location 2
+       </option>
+       <option>
+        Location 3
+       </option>
+      </select>
+     </div>
+     <div>
+      <label class="block text-gray-700 mb-2" for="to">
+       To
+      </label>
+      <select class="w-full p-3 border border-gray-300 rounded" id="to">
+       <option>
+        Location 1
+       </option>
+       <option>
+        Location 2
+       </option>
+       <option>
+        Location 3
+       </option>
+      </select>
+     </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+     <div>
+      <label class="block text-gray-700 mb-2" for="date">
+       When
+      </label>
+      <input class="w-full p-3 border border-gray-300 rounded" id="date" placeholder="dd-mm-yyyy" type="text"/>
+     </div>
+     <div>
+      <label class="block text-gray-700 mb-2" for="time">
+       Time
+      </label>
+      <div class="relative">
+       <input class="w-full p-3 border border-gray-300 rounded" id="time" placeholder="--:--" type="text"/>
+       <i class="fas fa-clock absolute right-3 top-3 text-gray-500">
+       </i>
+      </div>
+     </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+     <div>
+      <label class="block text-gray-700 mb-2" for="seat">
+       Seat
+      </label>
+      <input class="w-full p-3 border border-gray-300 rounded" id="seat" placeholder="Number Of Seat" type="text"/>
+     </div>
+    </div>
+    <button class="bg-yellow-500 text-black w-full py-3 rounded-full font-semibold text-lg" type="submit">
+     <i class="fas fa-bus">
+     </i>
+     Book a Bus
+    </button>
+   </form>
+  </div>
+ </div>
+ <script src="https://cdn.tailwindcss.com">
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+</head>
+<body class="font-roboto">
+<div class="bg-white">
+ <div class="container mx-auto px-4 py-8 md:flex md:items-center">
+  <div class="md:w-1/2">
+   <h1 class="text-4xl font-bold text-blue-900 mb-4">
+    A bus rental that's affordable and comfortable
+   </h1>
+   <p class="text-gray-600 mb-8">
+    Letius quis dui at lectus congue natoque et adipiscing curabitur molestie. Mattis magnis mollis ultricies eros tortor vivamus venenatis. Mauris iaculis amet porta lobortis dictum cubilia et ex.
+   </p>
+   <div class="flex space-x-8">
+    <div>
+     <p class="text-4xl font-bold text-yellow-500">
+      25+
+     </p>
+     <p class="text-lg font-semibold text-gray-800">
+      Bus Ready
+     </p>
+     <p class="text-gray-600">
+      Sed nunc si consectetur convallis facilisis dictumst nibh.
+     </p>
+    </div>
+    <div>
+     <p class="text-4xl font-bold text-yellow-500">
+      97%
+     </p>
+     <p class="text-lg font-semibold text-gray-800">
+      Satisfied Customer
+     </p>
+     <p class="text-gray-600">
+      Sed nunc si consectetur convallis facilisis dictumst nibh.
+     </p>
+    </div>
+   </div>
+  </div>
+  <div class="md:w-1/2 mt-8 md:mt-0">
+   <img alt="A smiling woman holding a phone with a red double-decker bus in the background on a busy city street" class="rounded-lg shadow-lg" height="400" src="https://storage.googleapis.com/a1aa/image/jd7uXXx8NbmHSJWpaS09NpRxtOU4CSVwrI0vFXsihcY.jpg" width="600"/>
+  </div>
+ </div>
+ </div>
+</div>
+<script src="https://cdn.tailwindcss.com">
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body class="bg-white">
+<div class="container mx-auto px-4 py-8">
+ <div class="text-center">
+  <h2 class="text-sm font-bold text-gray-600">
+   WHO WE ARE
+  </h2>
+  <h1 class="text-4xl font-bold text-blue-900 mt-2">
+   Enjoy the journey – travel with us
+  </h1>
+  <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+   Dolor augue curae montes eget sollicitudin diam praesent non mus in lobortis. Ligula magna himenaeos dictumst cubilia dolor morbi letius tempor in convallis. Semper litora suscipit facilisis scelerisque aenean rhoncus tempus mauris interdum dis parturient. Ultrices feugiat adipiscing pharetra penatibus praesent non fusce ipsum class. Sociosqu turpis scelerisque laoreet pulvinar fermentum posuere nam mollis porttitor convallis dictumst.
+  </p>
+ </div>
+ <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+  <div class="flex justify-center">
+   <img alt="A woman in a blue jacket holding a phone and standing in a bus or train, smiling and looking out the window." class="rounded-lg shadow-lg" height="300" src="https://storage.googleapis.com/a1aa/image/L7xGsOWwjaI2Zk8J2BAR2WDasN5LQJaNm3RVi91WcEo.jpg" width="400"/>
+  </div>
+  <div class="flex justify-center">
+   <img alt="A man and a woman standing in front of a bus, the man is holding a map and the woman has a camera around her neck." class="rounded-lg shadow-lg" height="300" src="https://storage.googleapis.com/a1aa/image/sJ89-Q1yuDSS_GQEsdE7J1nuZaPbO0f4zlCkUBYfSvU.jpg" width="400"/>
+  </div>
+  <div class="relative flex justify-center">
+   <img alt="A group of young people sitting in a bus, smiling and talking to each other." class="rounded-lg shadow-lg" height="300" src="https://storage.googleapis.com/a1aa/image/XJFcRVCDqU2q46QL0SsplnAojAgrf_I5N6jApbf8QVc.jpg" width="400"/>
+   <div class="absolute inset-0 flex items-center justify-center">
+    <i class="fas fa-play-circle text-white text-6xl">
+    </i>
+   </div>
+  </div>
+ </div>
+ <script src="https://cdn.tailwindcss.com">
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body class="font-sans">
+<!-- As featured in section -->
+<section class="bg-white py-8">
+ <div class="container mx-auto text-center">
+  <h2 class="text-xl font-bold text-blue-800 mb-4">
+   As featured in :
+  </h2>
+  <div class="flex justify-center space-x-8">
+   <img alt="Logo 1" class="h-12" height="50" src="https://storage.googleapis.com/a1aa/image/QnGUO780D1nrgrO9sQOil15i43FhHyYTjbQhJ6cJJps.jpg" width="100"/>
+   <img alt="Logo 2" class="h-12" height="50" src="https://storage.googleapis.com/a1aa/image/H5lndSnaV7xz6-7jl8jSeINHQlVkD95opbpRbdl240E.jpg" width="100"/>
+   <img alt="Logo 3" class="h-12" height="50" src="https://storage.googleapis.com/a1aa/image/q4L9OCeDfc2DMWpRPiluzAiYtLjMMsQQ60QE9IVjN7g.jpg" width="100"/>
+   <img alt="Logo 4" class="h-12" height="50" src="https://storage.googleapis.com/a1aa/image/vfJh1Qskj7ae2QwdL7JrnOCjQpAaVlzBAbONqf32QK4.jpg" width="100"/>
+   <img alt="Logo 5" class="h-12" height="50" src="https://storage.googleapis.com/a1aa/image/chFHkQn1VWEJydlwM_DeZRCt1gOIKRnydHyYqAb35_Y.jpg" width="100"/>
+   <img alt="Logo 6" class="h-12" height="50" src="https://storage.googleapis.com/a1aa/image/HBTq97GDQVtSHAdzqTKRgOyAJOQwejCqu28vBCskCdM.jpg" width="100"/>
+  </div>
+ </div>
+</section>
+<!-- Hero section -->
+<section class="relative">
+ <img alt="Buses in a row" class="w-full h-auto object-cover" height="600" src="https://storage.googleapis.com/a1aa/image/gRdQqBUFNTVK4xR1APJKw70LyegkKsGwYn0gyDwamGA.jpg" width="1920"/>
+ <div class="absolute inset-0 bg-blue-900 bg-opacity-50 flex flex-col justify-center items-center text-center text-white px-4">
+  <h3 class="text-yellow-500 text-sm font-bold mb-2">
+   PREMIUM BUS CHARTER
+  </h3>
+  <h1 class="text-4xl md:text-5xl font-bold mb-4">
+   Group Transportation Just Got Easier With Our Bus Rental
+  </h1>
+  <p class="text-lg md:text-xl">
+   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+  </p>
+ </div>
+</section>
+<script src="https://cdn.tailwindcss.com">
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+ body {
+          font-family: 'Poppins', sans-serif;
+      }
+</style>
+</head>
+<body class="bg-white text-gray-800">
+<section class="text-center py-12">
+ <h2 class="text-sm text-gray-500 uppercase tracking-widest">
+  Our Services
+ </h2>
+ <h1 class="text-4xl font-bold text-blue-900 mt-2">
+  We Provide Best Services For You
+ </h1>
+ <p class="text-gray-500 mt-4">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+ </p>
+</section>
+<section class="container mx-auto px-4 py-12">
+ <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  <div class="bg-gray-100 p-8 rounded-lg shadow-lg text-center">
+   <img alt="Yellow school bus icon" class="mx-auto mb-4" height="64" src="https://storage.googleapis.com/a1aa/image/O_HfHGUBLBoVcG9rlzwAnQj7byNAm8zFYhxLn6tnOyg.jpg" width="64"/>
+   <h3 class="text-xl font-semibold text-blue-900">
+    School Bus Rental
+   </h3>
+   <p class="text-gray-500 mt-2">
+    Finibus porta urna eget egestas amet nisi vel bibendum. Mi litora dui scelerisque risus facilisi.
+   </p>
+   <a class="text-purple-600 mt-4 inline-block" href="#">
+    Learn More
+    <i class="fas fa-arrow-right">
+    </i>
+   </a>
+  </div>
+  <div class="bg-gray-100 p-8 rounded-lg shadow-lg text-center">
+   <img alt="Yellow diamond icon" class="mx-auto mb-4" height="64" src="https://storage.googleapis.com/a1aa/image/yfP7HGiT9uiQMSkYvw2ITtgI3Brdm0QQ7jhdMKWN6pQ.jpg" width="64"/>
+   <h3 class="text-xl font-semibold text-blue-900">
+    Wedding Guests
+   </h3>
+   <p class="text-gray-500 mt-2">
+    Finibus porta urna eget egestas amet nisi vel bibendum. Mi litora dui scelerisque risus facilisi.
+   </p>
+   <a class="text-purple-600 mt-4 inline-block" href="#">
+    Learn More
+    <i class="fas fa-arrow-right">
+    </i>
+   </a>
+  </div>
+  <div class="bg-gray-100 p-8 rounded-lg shadow-lg text-center">
+   <img alt="Yellow briefcase icon" class="mx-auto mb-4" height="64" src="https://storage.googleapis.com/a1aa/image/zoVWOnz1ldCM4pqTBFRYBg1QcsnhJ0FGqFJ4b4JrqZw.jpg" width="64"/>
+   <h3 class="text-xl font-semibold text-blue-900">
+    Corporate Travelers
+   </h3>
+   <p class="text-gray-500 mt-2">
+    Finibus porta urna eget egestas amet nisi vel bibendum. Mi litora dui scelerisque risus facilisi.
+   </p>
+   <a class="text-purple-600 mt-4 inline-block" href="#">
+    Learn More
+    <i class="fas fa-arrow-right">
+    </i>
+   </a>
+  </div>
+ </div>
+</section>
+<script src="https://cdn.tailwindcss.com">
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+<div class="container mx-auto px-4 py-8">
+ <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+  <!-- Card 1 -->
+  <div class="bg-white shadow-md rounded-lg p-6 text-center">
+   <img alt="Icon of a backpack representing private travelers" class="mx-auto mb-4" height="50" src="https://storage.googleapis.com/a1aa/image/Sr5PbOISbanC2R3jgudzlRPy4F-elTBVLslLO1eKLhg.jpg" width="50"/>
+   <h3 class="text-xl font-bold text-blue-900 mb-2">
+    Private Travelers
+   </h3>
+   <p class="text-gray-600 mb-4">
+    Finibus porta urna eget egestas amet nisi vel bibendum. Mi litora dui scelerisque risus facilisi.
+   </p>
+   <a class="text-purple-600 font-bold hover:underline" href="#">
+    Learn More
+    <i class="fas fa-arrow-right">
+    </i>
+   </a>
+  </div>
+  <!-- Card 2 -->
+  <div class="bg-white shadow-md rounded-lg p-6 text-center">
+   <img alt="Icon of an airplane representing airport shuttles" class="mx-auto mb-4" height="50" src="https://storage.googleapis.com/a1aa/image/upoj75b86Kq6bGw_h8m4m0jrJWHemXMggasTkBVT35Y.jpg" width="50"/>
+   <h3 class="text-xl font-bold text-blue-900 mb-2">
+    Airport Shuttles
+   </h3>
+   <p class="text-gray-600 mb-4">
+    Finibus porta urna eget egestas amet nisi vel bibendum. Mi litora dui scelerisque risus facilisi.
+   </p>
+   <a class="text-purple-600 font-bold hover:underline" href="#">
+    Learn More
+    <i class="fas fa-arrow-right">
+    </i>
+   </a>
+  </div>
+  <!-- Card 3 -->
+  <div class="bg-white shadow-md rounded-lg p-6 text-center">
+   <img alt="Icon of a bus representing tours and excursions" class="mx-auto mb-4" height="50" src="https://storage.googleapis.com/a1aa/image/aUxGznncA7O6Hu767g2bPqfXpfrxO-8HPuyjLFZ6SM8.jpg" width="50"/>
+   <h3 class="text-xl font-bold text-blue-900 mb-2">
+    Tours &amp; Excursions
+   </h3>
+   <p class="text-gray-600 mb-4">
+    Finibus porta urna eget egestas amet nisi vel bibendum. Mi litora dui scelerisque risus facilisi.
+   </p>
+   <a class="text-purple-600 font-bold hover:underline" href="#">
+    Learn More
+    <i class="fas fa-arrow-right">
+    </i>
+   </a>
+  </div>
+ </div>
+</div>
+<script src="https://cdn.tailwindcss.com">
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+</head>
+<body class="font-roboto">
+<div class="container mx-auto p-6">
+ <h2 class="text-sm font-bold text-gray-600">
+  CHOOSE THE BUS
+ </h2>
+ <h1 class="text-4xl font-bold text-blue-900 mt-2">
+  Get on the road with our bus rental
+ </h1>
+ <p class="text-gray-600 mt-4">
+  Sed ornare mi rhoncus iaculis elementum elit maximus. Ex facilisis suspendisse velit donec eget nulla venenatis habitasse maecenas conubia urna. Duis imperdiet bibendum velit ligula aptent tempus sed semper pede donec. Odio bibendum dolor malesuada elementum nunc hac vitae lorem rhoncus hendrerit eros.
+ </p>
+ <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+  <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+   <img alt="A blue Setra bus parked on the road" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/-esMINkitlGCERT2tURYnr7j0biVap8mjuWIFiRPzJc.jpg" width="600"/>
+   <div class="p-4">
+    <h3 class="text-xl font-bold text-blue-900">
+     Setra Bus
+    </h3>
+    <p class="text-gray-600">
+     / 56-PASSENGER
+    </p>
+    <div class="flex items-center mt-2">
+     <i class="fas fa-star text-yellow-500">
+     </i>
+     <i class="fas fa-star text-yellow-500">
+     </i>
+     <i class="fas fa-star text-yellow-500">
+     </i>
+     <i class="fas fa-star text-yellow-500">
+     </i>
+     <i class="fas fa-star-half-alt text-yellow-500">
+     </i>
+    </div>
+   </div>
+  </div>
+  <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+   <img alt="A red Van Hool bus on the road" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/F5JQPa20_Bg6VpuMmc5aDYBibcIffNdOlGwKuULA0aM.jpg" width="600"/>
+   <div class="p-4">
+    <h3 class="text-xl font-bold text-blue-900">
+     Van Hool Bus
+    </h3>
+    <p class="text-gray-600">
+     / 56-PASSENGER
+    </p>
+    <div class="flex items-center mt-2">
+     <i class="fas fa-star text-yellow-500">
+     </i>
+     <i class="fas fa-star text-yellow-500">
+     </i>
+     <i class="fas fa-star text-yellow-500">
+     </i>
+     <i class="fas fa-star text-yellow-500">
+     </i>
+     <i class="fas fa-star-half-alt text-yellow-500">
+     </i>
+    </div>
+   </div>
+  </div>
+  <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+   <img alt="A yellow MCI bus on the road" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/bA6Rmex0KRHk5QRpyijSgqRBhw8Atkd5bAhYAxAS-tg.jpg" width="600"/>
+   <div class="p-4">
+    <h3 class="text-xl font-bold text-blue-900">
+     MCI Bus
+    </h3>
+    <p class="text-gray-600">
+     / 56-PASSENGER
+    </p>
+    <div class="flex items-center mt-2">
+     <i class="fas fa-star text-yellow-500">
+     </i>
+     <i class="fas fa-star text-yellow-500">
+     </i>
+     <i class="fas fa-star text-yellow-500">
+     </i>
+     <i class="fas fa-star text-yellow-500">
+     </i>
+     <i class="fas fa-star-half-alt text-yellow-500">
+     </i>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+</head>
+<body class="bg-gray-100">
+<div class="container mx-auto p-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <!-- Card 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <p class="text-gray-700 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            <button class="bg-indigo-900 text-white font-bold py-2 px-4 rounded">View Detail</button>
+        </div>
+        <!-- Card 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <div class="flex items-center mb-2">
+                <i class="fas fa-star text-yellow-500"></i>
+                <i class="fas fa-star text-yellow-500"></i>
+                <i class="fas fa-star text-yellow-500"></i>
+                <i class="fas fa-star text-yellow-500"></i>
+                <i class="fas fa-star-half-alt text-yellow-500"></i>
+            </div>
+            <p class="text-gray-700 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            <button class="bg-yellow-500 text-black font-bold py-2 px-4 rounded">View Detail</button>
+        </div>
+        <!-- Card 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <p class="text-gray-700 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            <button class="bg-yellow-500 text-black font-bold py-2 px-4 rounded">View Detail</button>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.tailwindcss.com">
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+<style>
+ body {
+          font-family: 'Arial', sans-serif;
+      }
+</style>
+</head>
+<body class="bg-gray-900 text-white">
+<div class="relative">
+ <img alt="A woman standing in front of a bus in a city" class="w-full h-full object-cover absolute inset-0 z-0" height="1080" src="https://storage.googleapis.com/a1aa/image/_24clUQUTxiJ5tIKb9y7PDS__wqBv2pSSH29F_9MlpU.jpg" width="1920"/>
+ <div class="relative z-10 bg-gray-900 bg-opacity-75 p-8 md:p-16">
+  <h2 class="text-yellow-400 text-lg font-bold mb-2">
+   WHY CHOOSE US
+  </h2>
+  <h1 class="text-4xl md:text-6xl font-bold mb-4">
+   Riding with us, your satisfaction is guaranteed!
+  </h1>
+  <p class="text-lg mb-8">
+   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+  </p>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+   <div class="flex items-start">
+    <div class="bg-yellow-500 text-black p-2 rounded-full mr-4">
+     <i class="fas fa-check text-2xl">
+     </i>
+    </div>
+    <div>
+     <h3 class="text-xl font-bold mb-2">
+      Safety &amp; Security
+     </h3>
+     <p>
+      Iaculis metus eleifend sit vivamus finibus dictumst himenaeos.
+     </p>
+    </div>
+   </div>
+   <div class="flex items-start">
+    <div class="bg-yellow-500 text-black p-2 rounded-full mr-4">
+     <i class="fas fa-check text-2xl">
+     </i>
+    </div>
+    <div>
+     <h3 class="text-xl font-bold mb-2">
+      On Time &amp; Punctual
+     </h3>
+     <p>
+      Iaculis metus eleifend sit vivamus finibus dictumst himenaeos.
+     </p>
+    </div>
+   </div>
+   <div class="flex items-start">
+    <div class="bg-yellow-500 text-black p-2 rounded-full mr-4">
+     <i class="fas fa-check text-2xl">
+     </i>
+    </div>
+    <div>
+     <h3 class="text-xl font-bold mb-2">
+      Professional Drivers
+     </h3>
+     <p>
+      Iaculis metus eleifend sit vivamus finibus dictumst himenaeos.
+     </p>
+    </div>
+   </div>
+   <div class="flex items-start">
+    <div class="bg-yellow-500 text-black p-2 rounded-full mr-4">
+     <i class="fas fa-check text-2xl">
+     </i>
+    </div>
+    <div>
+     <h3 class="text-xl font-bold mb-2">
+      Well Maintenance
+     </h3>
+     <p>
+      Iaculis metus eleifend sit vivamus finibus dictumst himenaeos.
+     </p>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="absolute bottom-0 right-0 bg-white text-gray-900 p-6 md:p-8 rounded-tl-lg shadow-lg">
+  <h3 class="text-xl font-bold mb-2">
+   We Provide Best Bus For You
+  </h3>
+  <p class="mb-4">
+   Quis arcu phasellus hac penatibus vivamus maximus.
+  </p>
+  <a class="text-purple-600 font-bold" href="#">
+   View Our Bus
+   <i class="fas fa-arrow-right">
+   </i>
+  </a>
+ </div>
+</div>
+<script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto py-12">
+        <div class="text-center mb-8">
+            <h2 class="text-sm font-semibold text-gray-600">HOW IT WORKS</h2>
+            <h1 class="text-4xl font-bold text-blue-900">4 Steps To Booking Our Bus</h1>
+            <p class="text-gray-500 mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-gradient-to-r from-purple-500 to-indigo-500 text-white p-6 rounded-lg shadow-lg">
+                <div class="flex items-center mb-4">
+                    <div class="bg-yellow-500 text-white rounded-full h-10 w-10 flex items-center justify-center text-lg font-bold">1</div>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Select Your Bus</h3>
+                <p>Consequat justo posuere risus euismod ultrices nec cubilia volutpat ligula.</p>
+            </div>
+            <div class="bg-white text-gray-800 p-6 rounded-lg shadow-lg">
+                <div class="flex items-center mb-4">
+                    <div class="bg-yellow-500 text-white rounded-full h-10 w-10 flex items-center justify-center text-lg font-bold">2</div>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Booking & Confirm</h3>
+                <p>Consequat justo posuere risus euismod ultrices nec cubilia volutpat ligula.</p>
+            </div>
+            <div class="bg-white text-gray-800 p-6 rounded-lg shadow-lg">
+                <div class="flex items-center mb-4">
+                    <div class="bg-yellow-500 text-white rounded-full h-10 w-10 flex items-center justify-center text-lg font-bold">3</div>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Booking Payment</h3>
+                <p>Consequat justo posuere risus euismod ultrices nec cubilia volutpat ligula.</p>
+            </div>
+            <div class="bg-white text-gray-800 p-6 rounded-lg shadow-lg">
+                <div class="flex items-center mb-4">
+                    <div class="bg-yellow-500 text-white rounded-full h-10 w-10 flex items-center justify-center text-lg font-bold">4</div>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Start Your Roadtrip</h3>
+                <p>Consequat justo posuere risus euismod ultrices nec cubilia volutpat ligula.</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+   </head>
+   <body class="bg-white text-gray-800">
+    <div class="container mx-auto p-6">
+     <div class="flex flex-wrap md:flex-nowrap">
+      <div class="w-full md:w-1/2 flex flex-wrap">
+       <div class="w-1/2 p-2">
+        <img alt="Close-up of a bus window with a blue sky background" class="rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/RNAXa1kjHWtDX5g16kk9u3hnFAThDi7pZj1V_i-YO8I.jpg" width="300"/>
+       </div>
+       <div class="w-1/2 p-2">
+        <img alt="Row of buses parked in a lot" class="rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/PpeNq7dPEaO_xPNsYoYHrCx7WkM7Vq4RapyjiTG98Zk.jpg" width="300"/>
+       </div>
+       <div class="w-full p-2">
+        <div class="bg-gray-100 p-6 rounded-lg shadow-lg text-center">
+         <div class="bg-yellow-500 inline-block p-4 rounded-full mb-4">
+          <i class="fas fa-thumbs-up text-white text-2xl">
+          </i>
+         </div>
+         <h3 class="text-xl font-bold text-blue-900 mb-2">
+          Excellent Service
+         </h3>
+         <p class="text-gray-600">
+          Lorem fusce nullam facilisi consequat rutrum quam nam.
+         </p>
+        </div>
+       </div>
+       <div class="w-1/2 p-2">
+        <img alt="Yellow school bus parked in a lot" class="rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/Np5RITuKjY05_bMNTmvQEkK0ra_UnJkel-AZ-VEDmtE.jpg" width="300"/>
+       </div>
+       <div class="w-1/2 p-2">
+        <img alt="Row of yellow school buses parked in a lot" class="rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/YcKCtJGRrsAJ8LS9XN50BhW5QQFuZBKSO8fr3VVcb98.jpg" width="300"/>
+       </div>
+      </div>
+      <div class="w-full md:w-1/2 p-6">
+       <h1 class="text-4xl font-bold text-blue-900 mb-4">
+        We make sure every bus is in excellent shape
+       </h1>
+       <p class="text-gray-600 mb-6">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+       </p>
+       <ul class="mb-6">
+        <li class="flex items-center mb-2">
+         <i class="fas fa-check text-yellow-500 mr-2">
+         </i>
+         <span>
+          Confirming a proper amount of engine oil and coolant
+         </span>
+        </li>
+        <li class="flex items-center mb-2">
+         <i class="fas fa-check text-yellow-500 mr-2">
+         </i>
+         <span>
+          Ensuring that tire pressure is at an appropriate level
+         </span>
+        </li>
+        <li class="flex items-center mb-2">
+         <i class="fas fa-check text-yellow-500 mr-2">
+         </i>
+         <span>
+          Measuring tire tread depth for optimum traction
+         </span>
+        </li>
+        <li class="flex items-center mb-2">
+         <i class="fas fa-check text-yellow-500 mr-2">
+         </i>
+         <span>
+          Keeping electrical equipment clean and free of dust
+         </span>
+        </li>
+       </ul>
+       <a class="bg-yellow-500 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-yellow-600 transition duration-300" href="#">
+        Discover More
+       </a>
+      </div>
+     </div>
+    </div>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+   </head>
+   <body class="bg-white text-gray-800">
+    <div class="container mx-auto px-4 py-8">
+     <div class="flex justify-between items-center mb-8">
+      <h1 class="text-4xl font-bold text-blue-900">
+       Favorite Destinations
+       <span class="text-yellow-500">
+        ➤➤➤
+       </span>
+      </h1>
+      <button class="bg-yellow-500 text-white px-4 py-2 rounded-md flex items-center">
+       <i class="fas fa-arrow-right mr-2">
+       </i>
+       Other Destination
+      </button>
+     </div>
+     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="relative">
+       <img alt="Bali, Indonesia - Scenic view of ancient temple with lush green mountains in the background" class="w-full h-64 object-cover rounded-lg" height="400" src="https://storage.googleapis.com/a1aa/image/3YOReGmzJGUT0Etq-X84tki0PEiHCShcelofhryUSP8.jpg" width="600"/>
+       <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-4 rounded-b-lg">
+        <h2 class="text-white text-xl font-semibold">
+         Bali, Indonesia
+        </h2>
+        <p class="text-white">
+         Lorem ipsum dolor sit amet consectetur adipiscing.
+        </p>
+        <button class="mt-2 bg-white text-blue-900 px-4 py-2 rounded-md">
+         Book Destination
+        </button>
+       </div>
+      </div>
+      <div class="relative">
+       <img alt="San Francisco, US - Golden Gate Bridge with cityscape in the background" class="w-full h-64 object-cover rounded-lg" height="400" src="https://storage.googleapis.com/a1aa/image/GPAGUCd7_p-hYarjlcyMf4FVY62I-_YLEaKxvV650Xs.jpg" width="600"/>
+       <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-4 rounded-b-lg">
+        <h2 class="text-white text-xl font-semibold">
+         San Francisco, US
+        </h2>
+        <p class="text-white">
+         Lorem ipsum dolor sit amet consectetur adipiscing.
+        </p>
+        <button class="mt-2 bg-white text-blue-900 px-4 py-2 rounded-md">
+         Book Destination
+        </button>
+       </div>
+      </div>
+      <div class="relative">
+       <img alt="Eiffel Tower, France - Iconic Eiffel Tower with clear blue sky" class="w-full h-64 object-cover rounded-lg" height="400" src="https://storage.googleapis.com/a1aa/image/VUASDXrWF7-BQOyuV2iEfOuZ_Ksbxh4G7DlOo-ecf7I.jpg" width="600"/>
+       <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-4 rounded-b-lg">
+        <h2 class="text-white text-xl font-semibold">
+         Eiffel Tower, France
+        </h2>
+        <p class="text-white">
+         Lorem ipsum dolor sit amet consectetur adipiscing.
+        </p>
+        <button class="mt-2 bg-white text-blue-900 px-4 py-2 rounded-md">
+         Book Destination
+        </button>
+       </div>
+      </div>
+      <div class="relative">
+       <img alt="Borobudur, Indonesia - Ancient Buddhist temple with lush green landscape" class="w-full h-64 object-cover rounded-lg" height="400" src="https://storage.googleapis.com/a1aa/image/jkb5jvcC6hooi1acO_Hw9AGRdWm_5B1j25cLT4R5r8M.jpg" width="600"/>
+       <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-4 rounded-b-lg">
+        <h2 class="text-white text-xl font-semibold">
+         Borobudur, Indonesia
+        </h2>
+        <p class="text-white">
+         Lorem ipsum dolor sit amet consectetur adipiscing.
+        </p>
+        <button class="mt-2 bg-white text-blue-900 px-4 py-2 rounded-md">
+         Book Destination
+        </button>
+       </div>
+      </div>
+     </div>
+    </div>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+    <style>
+     body {
+              font-family: 'Roboto', sans-serif;
+          }
+          .diagonal-stripes {
+              background: repeating-linear-gradient(
+                  45deg,
+                  #f7f7f7,
+                  #f7f7f7 10px,
+                  #ffffff 10px,
+                  #ffffff 20px
+              );
+          }
+    </style>
+   </head>
+   <body class="diagonal-stripes">
+    <div class="max-w-6xl mx-auto p-6">
+     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="relative">
+       <img alt="A man sitting on a bus, smiling and looking at his phone. He is wearing headphones and a blue shirt. Other passengers are visible in the background." class="w-full h-full object-cover rounded-lg" height="400" src="https://storage.googleapis.com/a1aa/image/BG29oz0USjppyLsEw9ia5a95mUQfnKlau7phOFdqsqc.jpg" width="600"/>
+       <div class="absolute top-4 right-4 bg-yellow-500 text-white p-2 rounded-full">
+        <i class="fas fa-quote-right text-2xl">
+        </i>
+       </div>
+      </div>
+      <div class="flex flex-col justify-center">
+       <h3 class="text-sm font-semibold text-gray-600">
+        TESTIMONIALS
+       </h3>
+       <h2 class="text-4xl font-bold text-blue-900 mt-2">
+        What are they saying
+       </h2>
+       <p class="text-gray-600 mt-4">
+        Placerat libero hendrerit quis habitant lobortis pellentesque tellus.
+       </p>
+       <div class="bg-white p-6 mt-6 rounded-lg shadow-lg">
+        <p class="text-gray-600 italic">
+         "Nisi habitasse maximus vehicula consectetuer class fames pharetra phasellus curabitur nulla. Integer ad orci tempor magna vestibulum malesuada lorem."
+        </p>
+        <div class="flex items-center mt-4">
+         <img alt="Portrait of Byron Rink" class="w-12 h-12 rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/JE7CV6dC1u4XgmZwxo0A-0Gu98KK2YEGhDWjMRJyKHI.jpg" width="50"/>
+         <div class="ml-4">
+          <p class="text-blue-900 font-bold">
+           Byron Rink
+          </p>
+          <p class="text-gray-600">
+           Designation
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <div class="container mx-auto p-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="md:col-span-1">
+                <div class="flex items-center mb-4">
+                    <div class="w-8 h-8 bg-yellow-500 mr-2"></div>
+                    <div class="w-8 h-8 bg-yellow-500 mr-2"></div>
+                    <div class="w-8 h-8 bg-yellow-500"></div>
+                </div>
+                <h1 class="text-4xl font-bold text-blue-900 mb-4">Frequently Asked Questions</h1>
+                <p class="text-gray-600 mb-8">Congue purus pellentesque odio letius senectus fermentum. Mattis senectus nullam lectus non litora congue lorem.</p>
+                <div class="bg-gray-100 p-4 border border-gray-200">
+                    <h2 class="text-xl font-bold text-blue-900 mb-2">Have a Question?</h2>
+                    <p class="text-gray-600 mb-4">Quis arcu phasellus hac penatibus vivamus maximus.</p>
+                    <a href="#" class="text-purple-600 font-bold">Contact Us <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="md:col-span-2">
+                <div class="bg-gradient-to-r from-purple-600 to-purple-800 text-white p-4 mb-4 flex justify-between items-center">
+                    <h2 class="text-xl font-bold">Where Can I Find Information?</h2>
+                    <i class="fas fa-times"></i>
+                </div>
+                <p class="text-gray-600 mb-8">Velit sociosqu purus enim pharetra sed sem at iaculis. Felis ridiculus adipiscing dignissim eros pellentesque mus vitae litora. Felis nullam tortor phasellus viverra ut arcu. Euismod magnis ante convallis vulputate odio augue sit pretium dapibus.</p>
+                <div class="space-y-4">
+                    <div class="bg-gray-100 p-4 flex justify-between items-center">
+                        <h3 class="text-blue-900 font-bold">What Are Your Terms And Conditions?</h3>
+                        <i class="fas fa-arrow-right text-blue-900"></i>
+                    </div>
+                    <div class="bg-gray-100 p-4 flex justify-between items-center">
+                        <h3 class="text-blue-900 font-bold">Can I Buy Directly From The Factory?</h3>
+                        <i class="fas fa-arrow-right text-blue-900"></i>
+                    </div>
+                    <div class="bg-gray-100 p-4 flex justify-between items-center">
+                        <h3 class="text-blue-900 font-bold">What Kinds of Payment Do You Accept?</h3>
+                        <i class="fas fa-arrow-right text-blue-900"></i>
+                    </div>
+                    <div class="bg-gray-100 p-4 flex justify-between items-center">
+                        <h3 class="text-blue-900 font-bold">When do I receive my order?</h3>
+                        <i class="fas fa-arrow-right text-blue-900"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+   </head>
+   <body class="bg-gray-100">
+    <div class="bg-white py-8">
+     <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold text-blue-900">
+       Signup our newsletter to get update information, news, insight or promotions.
+      </h2>
+      <div class="mt-4 flex justify-center">
+       <input class="border border-gray-300 p-2 rounded-l-md" placeholder="Enter your email" type="email"/>
+       <button class="bg-yellow-500 text-white px-4 py-2 rounded-r-md flex items-center">
+        <i class="fas fa-envelope mr-2">
+        </i>
+        Sign Up
+       </button>
+      </div>
+     </div>
+    </div>
+    <footer class="bg-blue-900 text-white py-12">
+     <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+       <img alt="Bigtranz logo" class="mb-4" height="50" src="https://storage.googleapis.com/a1aa/image/0RyX-yB3rYuAcFZA9eqrdnI1Svhu8asVKcmbD2t2OZ8.jpg" width="150"/>
+       <p>
+        Molestie ad feugiat est facilisi faucibus magnis. Convallis magna pellentesque odio fusce turpis elit.
+       </p>
+       <button class="bg-yellow-500 text-blue-900 px-4 py-2 mt-4 flex items-center">
+        <i class="fas fa-phone-alt mr-2">
+        </i>
+        888-7007-235
+       </button>
+      </div>
+      <div>
+       <h3 class="font-bold mb-4">
+        Company
+       </h3>
+       <ul>
+        <li class="mb-2">
+         <a class="hover:underline" href="#">
+          About Us
+         </a>
+        </li>
+        <li class="mb-2">
+         <a class="hover:underline" href="#">
+          Leadership
+         </a>
+        </li>
+        <li class="mb-2">
+         <a class="hover:underline" href="#">
+          Careers
+         </a>
+        </li>
+        <li class="mb-2">
+         <a class="hover:underline" href="#">
+          Article &amp; News
+         </a>
+        </li>
+        <li class="mb-2">
+         <a class="hover:underline" href="#">
+          Legal Notice
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div>
+       <h3 class="font-bold mb-4">
+        Services
+       </h3>
+       <ul>
+        <li class="mb-2">
+         <a class="hover:underline" href="#">
+          Safety Guarantee
+         </a>
+        </li>
+        <li class="mb-2">
+         <a class="hover:underline" href="#">
+          Schedule on Time
+         </a>
+        </li>
+        <li class="mb-2">
+         <a class="hover:underline" href="#">
+          Online Booking
+         </a>
+        </li>
+        <li class="mb-2">
+         <a class="hover:underline" href="#">
+          Professional Staff
+         </a>
+        </li>
+        <li class="mb-2">
+         <a class="hover:underline" href="#">
+          FAQ &amp; Support
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div>
+       <h3 class="font-bold mb-4">
+        Get In Touch
+       </h3>
+       <p class="mb-2">
+        <i class="fas fa-map-marker-alt mr-2">
+        </i>
+        Jl Cempaka Wangi No 22 Jakarta - Indonesia
+       </p>
+       <p class="mb-2">
+        <i class="fas fa-envelope mr-2">
+        </i>
+        support@yourmail.tld
+       </p>
+       <p class="mb-2">
+        <i class="fas fa-phone-alt mr-2">
+        </i>
+        +6221.2002.2012
+       </p>
+       <h3 class="font-bold mt-4">
+        Follow Us :
+       </h3>
+       <div class="flex space-x-4 mt-2">
+        <a class="text-yellow-500" href="#">
+         <i class="fab fa-facebook-f">
+         </i>
+        </a>
+        <a class="text-yellow-500" href="#">
+         <i class="fab fa-instagram">
+         </i>
+        </a>
+        <a class="text-yellow-500" href="#">
+         <i class="fab fa-tripadvisor">
+         </i>
+        </a>
+        <a class="text-yellow-500" href="#">
+         <i class="fab fa-twitter">
+         </i>
+        </a>
+        <a class="text-yellow-500" href="#">
+         <i class="fab fa-youtube">
+         </i>
+        </a>
+       </div>
+      </div>
+     </div>
+    </footer>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <footer class="bg-gray-900 text-white py-4">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="text-center md:text-left mb-2 md:mb-0">
+                <p class="text-sm">&copy; 2023 Bigtranz, All rights reserved. Powered by MoxCreative</p>
+            </div>
+            <div class="text-center md:text-right">
+                <a href="#" class="text-sm text-white hover:text-yellow-500 mx-2">Terms of use</a>
+                <span class="text-yellow-500">|</span>
+                <a href="#" class="text-sm text-white hover:text-yellow-500 mx-2">Privacy Policy</a>
+                <span class="text-yellow-500">|</span>
+                <a href="#" class="text-sm text-white hover:text-yellow-500 mx-2">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+ </body>
+</html>
